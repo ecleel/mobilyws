@@ -1,8 +1,6 @@
 # Mobilyws
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mobilyws`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby Library for Mobily.ws SMS Gateway API.
 
 ## Installation
 
@@ -23,6 +21,15 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+
+## TODO
+
+- [x] Send messeage.
+- [ ] Get status.
+- [ ] Check balance.
+- [ ] Send template message.
+- [ ] Delete messeage.
+- [ ] forget Messeage.
 
 ## Development
 
