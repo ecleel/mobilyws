@@ -20,8 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'mobilyws'
 
+api = Mobily::API.new "USERNAME", "PASSWORD", "SENDER_NAME"
+
+# send SMS
+api.send(message: "test message", numbers:["966555555555", "966555555556"]) # => "SMS sent successfully"
+
+# check balance
+api.balance # => "3/2"
+
+# check mobily.ws status
+api.status # => "Service Available"
+
+
+```
 ## TODO
 
 - [x] Send messeage.
