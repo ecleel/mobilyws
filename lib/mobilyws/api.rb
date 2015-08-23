@@ -30,6 +30,20 @@ module Mobilyws
       SEND_MSG_RESPONSES[response.body]
     end
 
+    def balance
+      request  = Net::HTTP::Post.new("/api/balance.php")
+      request.set_form_data(default_parameters)
+      response = @http.request(request)
+      response.body
+    end
+
+    def status
+      request = Net::HTTP::Get.new("/api/sendStatus.php")
+      response = @http.request(request)
+      result = "Service Unavailable"
+      result = "Service Available" if response.body == "1"
+    end
+
     def default_parameters(**others)
       {
         mobile: @username,
