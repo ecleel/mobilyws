@@ -39,11 +39,12 @@ api.status # => "Service Available"
 ## TODO
 
 - [x] Send messeage.
-- [ ] Get status.
-- [ ] Check balance.
+- [x] Check balance.
+- [x] Get status.
 - [ ] Send template message.
 - [ ] Delete messeage.
-- [ ] forget Messeage.
+- [ ] change password.
+- [ ] forget password.
 
 ## Development
 
